@@ -8,7 +8,7 @@ const { ToadScheduler, SimpleIntervalJob, Task } = require('toad-scheduler')
 const scheduler = new ToadScheduler()
 
 
-const port = 3000 || process.env.port
+const port = 3000 || process.env.PORT
 app.use(express.static('public'))
 app.use(express.json())
 
