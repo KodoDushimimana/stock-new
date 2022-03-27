@@ -12,8 +12,8 @@ const port = process.env.PORT || 3000
 app.use(express.static('public'))
 app.use(express.json())
 
-const base = new Airtable({apiKey: 'keyRtSv4UAZ79Kpoy'}).base('appkAFcXYmg8XNqMD');
-const stockMarket ='p6rar36NVmWOuFIkopmFNL_225wBbZRn'
+const base = new Airtable({Airtable_API}).base(BaseID); // Airtable is the database in this scenario
+const stockMarket = STOCK_API //Polygon.io website to access stock market last price-Free api
 const yesterday = dayjs().add(-1, 'day').format("YYYY-MM-DD", "America/New_York")
 
 
